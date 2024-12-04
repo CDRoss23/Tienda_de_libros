@@ -1,0 +1,17 @@
+<div class="popup-backdrop" (click)="close.emit()"></div>
+<div class="popup" (click)="$event.stopPropagation()">
+  <img [src]="book.image" alt="{{ book.title }}" class="product-image" />
+  
+  <div class="product-details">
+    <h3 class="product-title">{{ book.title }}</h3>
+    <p class="product-price">{{ book.price | currency }}</p>
+  </div>
+
+  <p class="product-author">Autor: {{ book.author }}</p>
+  <p class="product-category">Categoría: {{ book.category }}</p>
+
+  <div class="button-group">
+    <button class="cancel-button" (click)="close.emit()">Cancelar</button>
+    <button class="add-button" (click)="addToCart()">Agregar al carrito</button>
+  </div>
+</div>

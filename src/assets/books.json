@@ -1,0 +1,41 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Book 1",
+            "author": "Author", 
+            "price": 10,
+            "quantity": 5,
+            "shortDescription": "A short description of Book 1",
+            "fullDescription": "A full description of Book 1",
+            "rating": 4.5,
+            "category": "comedia",
+            "image": "https://th.bing.com/th?id=OIP.jzmqPLfT1iRpQuiU1leqWgHaLk&w=200&h=312&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+          },
+          {
+            "id": 2,
+            "title": "Book 2",
+            "author": "Author", 
+            "price": 15,
+            "quantity": 3,
+            "shortDescription": "A short description of Book 2",
+            "fullDescription": "A full description of Book 2",
+            "rating": 4.0,
+            "category": "drama",
+            "image": "https://th.bing.com/th?id=OIP.M3xv7KN64A6StoaXbJvKRAHaLI&w=203&h=306&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+          },
+          {
+            "id": 3,
+            "title": "Book 3",
+            "author": "Author", 
+            "price": 20,
+            "quantity": 7,
+            "shortDescription": "A short description of Book 3",
+            "fullDescription": "A full description of Book 3",
+            "rating": 5.0,
+            "category": "ciencia-ficcion",
+            "image": "https://i.pinimg.com/originals/ab/ec/d5/abecd51b79366c089872d1e88e6c7424.jpg"
+          }
+    ]
+  }
+

@@ -1,0 +1,135 @@
+.cart-summary-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.cart-summary {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+}
+
+.cart-summary h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.cart-summary .cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-summary li:last-child {
+  border-bottom: none;
+}
+
+.cart-summary button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+}
+
+.cart-summary button:hover {
+  background-color: #0056b3;
+}
+
+.cart-summary button:focus {
+  outline: none;
+}
+
+.cart-summary .close-btn {
+  background-color: #dc3545;
+}
+
+.cart-summary .close-btn:hover {
+  background-color: #c82333;
+}
+
+.cart-summary .clear-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.cart-summary .clear-btn:hover {
+  background-color: #e0a800;
+}
+
+.cart-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-summary th, .cart-summary td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.cart-summary .total {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-summary .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-summary .actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary .actions button:first-child {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.cart-summary .actions button:last-child {
+  background-color: #4caf50;
+  color: #fff;
+}

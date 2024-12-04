@@ -1,0 +1,31 @@
+<div class="cart-summary-backdrop" (click)="close.emit()"></div>
+<div class="cart-summary">
+  <h2>Resumen del Carrito</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of getGroupedCart()">
+        <td>{{ item.title }}</td>
+        <td>{{ item.price | currency }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.subtotal | currency }}</td>
+        <td><button (click)="removeFromCart(item)">Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="total">
+    <span>Total: {{ getTotal() | currency }}</span>
+  </div>
+  <div class="actions">
+    <button (click)="close.emit()">Cerrar</button>
+    <button (click)="pay.emit()">Pagar</button>
+  </div>
+</div>

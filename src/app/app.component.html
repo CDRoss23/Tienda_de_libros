@@ -53,9 +53,12 @@
       <input type="text" placeholder="Buscar" class="search-input" [(ngModel)]="searchTerm" (input)="filterProducts()">
       <select class="category-dropdown" [(ngModel)]="selectedCategory" (change)="filterProducts()">
         <option value="">Todas las categorías</option>
+        <option value="novela">Novela</option>
         <option value="drama">Drama</option>
-        <option value="comedia">Comedia</option>
+        <option value="romance">Romance</option>
         <option value="ciencia-ficcion">Ciencia Ficción</option>
+        <option value="fantasia">Fantasía</option>
+        <option value="misterio">Misterio</option>
       </select>
     </div>
   </div>

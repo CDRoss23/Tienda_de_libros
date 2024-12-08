@@ -9,6 +9,7 @@
 
   <p class="product-author">Autor: {{ book.author }}</p>
   <p class="product-category">Categoría: {{ book.category }}</p>
+  <p class="product-description">{{ book.fullDescription }}</p>
 
   <div class="button-group">
     <button class="cancel-button" (click)="close.emit()">Cancelar</button>

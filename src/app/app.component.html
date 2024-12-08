@@ -71,7 +71,10 @@
       </div>
       <p class="product-author">Autor: {{ book.author }}</p>
       <p class="product-category">Categoría: {{ book.category }}</p>
-      <button class="add-button" (click)="openPopup(book)">Agregar al carrito</button>
+      <p class="product-short-description">{{ book.shortDescription }}</p>
+      <div class="button-container">
+        <button class="add-button" (click)="openPopup(book)">Ver detalles</button>
+      </div>
     </div>
     <app-card-popup *ngIf="selectedItem" [book]="selectedItem" (close)="closePopup()"></app-card-popup>
   </div>

@@ -170,29 +170,30 @@ body {
 
 /* Responsive Grid for Book List */
 .book-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
 }
 
 .book-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.book-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: white;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espaciado inferior entre las tarjetas */
 }
 
  /* Imagen del producto */
 .product-image {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     background: #f0f0f0;
 }
 
@@ -229,7 +230,17 @@ body {
     width: 90%;
 }
 
-/* Botón de agregar */
+.product-author,
+.product-category,
+.product-short-description {
+    padding: 0 15px;
+}
+
+.button-container {
+    padding: 10px 15px;
+    margin-top: auto;
+}
+
 .add-button {
     background-color: #007bff;
     color: white;
@@ -244,7 +255,19 @@ body {
 
 .add-button:hover {
     background-color: #0056b3;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .header {
